@@ -18,16 +18,16 @@
               "properties": {
                 "navigationBarLabel": {
                   "type": "string",
-                  "title": "Navigation bar label",
-                  "default": "Select course language",
+                  "title": "Etykieta paska nawigacji",
+                  "default": "Wybierz język kursu",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "languageSelector": {
                   "type": "string",
-                  "title": "Language selector",
-                  "default": "Language selector",
+                  "title": "Selektor języka",
+                  "default": "Selektor języka",
                   "_adapt": {
                     "translatable": true
                   }

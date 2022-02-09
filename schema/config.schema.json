@@ -10,72 +10,72 @@
       "properties": {
         "_languagePicker": {
           "type": "object",
-          "title": "Language Picker",
+          "title": "Selektor języka",
           "default": {},
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Language Picker",
-              "description": "Controls whether the Language Picker extension is enabled or disabled",
+              "title": "Włącz selektor języka",
+              "description": "Kontroluje, czy rozszerzenie Language Picker jest włączone czy wyłączone.",
               "default": false
             },
             "title": {
               "type": "string",
-              "title": "Browser window title",
-              "description": "Text to be shown in the browser's title bar when the language picker is displayed",
+              "title": "Tytuł okna przeglądarki",
+              "description": "Tekst, który ma być wyświetlany na pasku tytułu przeglądarki, gdy wyświetlany jest selektor języka",
               "default": ""
             },
             "displayTitle": {
               "type": "string",
-              "title": "Language Picker title",
-              "description": "Header text for the Language Picker",
+              "title": "Tytuł selektora języka",
+              "description": "Tekst nagłówka dla selektora języka",
               "default": ""
             },
             "body": {
               "type": "string",
-              "title": "Language Picker body",
-              "description": "Introductory or explanatory text for the Language Picker",
+              "title": "Objaśnienie selektora języka",
+              "description": "Tekst wprowadzający lub objaśniający dla Selektora języka",
               "default": ""
             },
             "_showOnCourseLoad": {
               "type": "boolean",
-              "title": "Show on course load",
-              "description": "Controls whether the Language Picker should be displayed on course load or not",
+              "title": "Pokaż podczas łądowania kursu",
+              "description": "Kontroluje czy Language Picker ma być wyświetlany podczas ładowania kursu czy nie.",
               "default": true
             },
             "_languagePickerIconClass": {
               "type": "string",
-              "title": "Icon class",
-              "description": "Your default options here are: icon-globe, icon-language-1, icon-language-2",
+              "title": "Klasa ikony",
+              "description": "Twoje domyślne opcje tutaj to: icon-globe, icon-language-1, icon-language-2.",
               "default": "icon-language-2"
             },
             "_restoreStateOnLanguageChange": {
               "type": "boolean",
-              "title": "Restore course state on language change",
-              "description": "Determines whether or not the language picker will try to restore the 'state' of the course when the user changes language. It is advised that you only enable this setting if all course languages have exactly the same structure; if they do not, some loss of tracking data will occur. If this setting is disabled, tracking data will be cleared when the user switches language - the 'Confirm Message' should be used to warn the user of this",
+              "title": "Przywrócenie stanu kursu po zmianie języka",
+              "description": "Określa, czy system wyboru języka będzie próbował przywrócić 'stan' kursu, gdy użytkownik zmieni język. Zaleca się włączenie tego ustawienia tylko wtedy, gdy wszystkie języki kursu mają dokładnie taką samą strukturę; w przeciwnym razie nastąpi utrata danych śledzenia. Jeśli to ustawienie jest wyłączone, dane śledzenia zostaną usunięte, gdy użytkownik zmieni język - w 'Komunikacie potwierdzającym' należy o tym ostrzec użytkownika.",
               "default": false
             },
             "_classes": {
               "type": "string",
-              "title": "Custom classes",
+              "title": "Własne klasy",
               "description": "",
               "default": ""
             },
             "_languages": {
               "type": "array",
-              "title": "Languages",
+              "title": "Języki",
               "items": {
                 "type": "object",
                 "properties": {
                   "_language": {
                     "type": "string",
-                    "title": "Language code",
-                    "description": "This text must match the name of the language-specific folder located in the course root, e.g. en, fr, es",
+                    "title": "Kod języka",
+                    "description": "Tekst ten musi odpowiadać nazwie folderu językowego znajdującego się w korzeniu kursu, np. en, fr, es",
                     "default": ""
                   },
                   "_direction": {
                     "type": "string",
-                    "title": "Text direction",
+                    "title": "Kierunek tekstu",
                     "description": "",
                     "default": "ltr",
                     "enum": [
@@ -86,31 +86,31 @@
                   },
                   "_isDisabled": {
                     "type": "boolean",
-                    "title": "Disable selection of this language",
-                    "description": "Allows you to disable selection of this language. This can be useful in situations where localisation into a particular language has not yet been completed",
+                    "title": "Wyłączenie wyboru tego języka",
+                    "description": "Umożliwia wyłączenie wyboru tego języka. Może to być przydatne w sytuacjach, gdy lokalizacja na dany język nie została jeszcze zakończona.",
                     "default": false
                   },
                   "displayName": {
                     "type": "string",
-                    "title": "Language name",
-                    "description": "A user friendly name for the language, e.g. English, Français, Español",
+                    "title": "Nazwa języka",
+                    "description": "Przyjazna dla użytkownika nazwa języka, np. English, Français, Español",
                     "default": ""
                   },
                   "warningTitle": {
                     "type": "string",
-                    "title": "Confirm Title",
-                    "description": "This text appears as the header of the dialog confirming the learner's intent to change languages",
+                    "title": "Potwierdzić tytuł",
+                    "description": "Tekst ten pojawia się jako nagłówek okna dialogowego potwierdzającego zamiar zmiany języka przez uczącego się.",
                     "default": ""
                   },
                   "warningMessage": {
                     "type": "string",
-                    "title": "Confirm body",
-                    "description": "This text appears as the body of the dialog confirming the learner's intent to change languages.  Note: the warning message should indicate that any progress will be lost when the language is switched",
+                    "title": "Potwierdź korpus",
+                    "description": "Tekst ten pojawia się jako treść okna dialogowego potwierdzającego zamiar zmiany języka przez uczącego się.  Uwaga: komunikat ostrzegawczy powinien wskazywać, że wszelkie postępy zostaną utracone po zmianie języka.",
                     "default": ""
                   },
                   "_buttons": {
                     "type": "object",
-                    "title": "Prompt buttons",
+                    "title": "Przyciski zachęty",
                     "default": {},
                     "required": [
                       "yes",
@@ -119,13 +119,13 @@
                     "properties": {
                       "yes": {
                         "type": "string",
-                        "title": "Confirm button text",
-                        "default": "Yes"
+                        "title": "Tekst przycisku potwierdzającego",
+                        "default": "Tak"
                       },
                       "no": {
                         "type": "string",
-                        "title": "Cancel button text",
-                        "default": "No"
+                        "title": "Tekst przycisku Anuluj",
+                        "default": "Nie"
                       }
                     }
                   }
